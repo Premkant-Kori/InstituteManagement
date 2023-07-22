@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,32 +7,7 @@
     <title>Python Language Courses</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <style>
-        /* Custom Styles */
-        body {
-            background-color: white; /* Changed the background color to white */
-            color: black;
-        }
-
-        .card {
-            margin-bottom: 20px;
-            background-color: #f2f2f2; /* Lighter gray color */
-            justify-content: center; /* Align the text in the center */
-        }
-
-        .card-title {
-            font-weight: bold;
-            text-align: center;
-        }
-
-        .card-text {
-            text-align: justify; /* Justify the text content */
-        }
-
-        .btn-details {
-            float: right; /* Align the button to the right */
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="{% static 'course/css/all_courses.css' %}">
 </head>
 <body>
     <div class="container">
