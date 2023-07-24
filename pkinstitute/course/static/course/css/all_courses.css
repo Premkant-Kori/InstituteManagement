@@ -1,24 +1,4 @@
 /* Custom Styles */
-        body {
-            background-color: white; /* Changed the background color to white */
-            color: black;
-        }
-
-        .card {
-            margin-bottom: 20px;
-            background-color: #f8f9fa; /* Lighter gray color */
-            justify-content: center; /* Align the text in the center */
-        }
-
-        .card-title {
-            font-weight: bold;
-            text-align: center;
-        }
-
         .card-text {
             text-align: justify; /* Justify the text content */
-        }
-
-        .btn-details {
-            float: right; /* Align the button to the right */
         }
