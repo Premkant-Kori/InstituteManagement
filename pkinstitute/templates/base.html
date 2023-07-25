@@ -4,13 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PK Institute</title>
+  <title>{% block title %}PK Institute{% endblock title %}</title>
 
   <!-- Bootstrap CSS - Replace the URL with the Bootstrap CDN or local file path -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
-  <!-- Custom CSS - Add your own custom styles here -->
-  <style>
+<style>
     .navbar-brand {
       font-size: 24px;
       font-weight: bold;
@@ -98,8 +96,10 @@
   <!-- Main Content -->
   <div class="container mt-4 flex-grow-1">
     <!-- Add your main content here -->
+    {% block content%}
     <h1 class="text-center">Welcome to PK Institute</h1>
     <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    {% endblock content %}
   </div>
   <!-- End Main Content -->
 
