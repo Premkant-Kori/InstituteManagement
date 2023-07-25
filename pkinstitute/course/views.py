@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from course.models import Course
 
 # Create your views here.
 active = {
@@ -11,4 +12,9 @@ def home(request):
 
 
 def course(request):
-    return render(request, 'course/all_courses.html', {'nav': 'courses'})
+    course_list = Course.objects.all()
+    data = {
+        'nav': 'courses',
+        'course_list': course_list
+    }
+    return render(request, 'course/all_courses.html', data)

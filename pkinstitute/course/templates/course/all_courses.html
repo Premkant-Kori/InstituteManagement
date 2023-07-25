@@ -13,33 +13,17 @@
         <h1 class="text-center mt-4 mb-4">Python Language Courses</h1>
         <div class="row">
             <!-- Course Cards -->
-            <div class="col-md-4">
+            {% for course in course_list %}
+            <div class="col-md-4 mb-4">
                 <div class="card bg-light-subtle">
                     <div class="card-body">
-                        <h5 class="card-title text-center">Python Developer</h5>
-                        <p class="card-text">Develop, test, and maintain Python applications and software solutions for web development, data analysis, automation, and more.</p>
+                        <h5 class="card-title text-center">{{course.course_title}}</h5>
+                        <p class="card-text">{{course.course_desc}}</p>
                         <a href="#" class="btn btn-primary float-end">Details</a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card bg-light-subtle">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">Data Analyst</h5>
-                        <p class="card-text">Use Python to manipulate, analyze, and visualize data, providing insights and making data-driven decisions.</p>
-                        <a href="#" class="btn btn-primary float-end">Details</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card bg-light-subtle">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">Data Scientist</h5>
-                        <p class="card-text">Apply Python and machine learning libraries to build predictive models, perform data analysis, and solve complex business problems.</p>
-                        <a href="#" class="btn btn-primary float-end">Details</a>
-                    </div>
-                </div>
-            </div>
+            {% endfor %}
             <!-- Add more course cards here (up to three in a row) -->
         </div>
     </div>
