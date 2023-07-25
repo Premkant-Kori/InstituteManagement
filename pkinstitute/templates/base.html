@@ -72,14 +72,14 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <li class="nav-item {% if nav == 'home' %} active {% endif %}">
+          <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">About</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Courses</a>
+        <li class="nav-item {% if nav == 'course' %} active {% endif %}">
+          <a class="nav-link" href="{% url 'course' %}">Courses</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Contact</a>
@@ -100,7 +100,7 @@
     <!-- Add your main content here -->
     {% block content%}
     <h1 class="text-center">Welcome to PK Institute</h1>
-    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <p class="text-center">We Build Careers in Python.</p>
     {% endblock content %}
   </div>
   <!-- End Main Content -->
