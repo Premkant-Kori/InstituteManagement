@@ -11,4 +11,4 @@ def home(request):
 
 
 def course(request):
-    return render(request, 'course/all_courses.html', {'nav': 'course'})
+    return render(request, 'course/all_courses.html', {'nav': 'courses'})
