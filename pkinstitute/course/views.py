@@ -7,8 +7,7 @@ active = {
 }
 
 
-def home(request):
-    return render(request, 'base.html', {'nav': 'home'})
+
 
 
 def course(request):
