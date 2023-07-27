@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+{% block content %}
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-white">
+        <div class="container">
+            <div class="row">
+                <!-- Column 1 -->
+                <div class="col-md-6">
+                    <!-- Contact Us -->
+                    <div class="card bg-light border-1 rounded p-4 mb-4">
+                        <h2 class="text-center mb-4">Contact Us</h2>
+                        <form>
+                            <div class="form-group">
+                                <label for="fullName">Full Name</label>
+                                <input type="text" class="form-control" id="fullName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="mobileNumber">Mobile Number</label>
+                                <input type="tel" class="form-control" id="mobileNumber" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                        </form>
+                    </div>
+                    <!-- Address -->
+                    <div class="card bg-light border-1 rounded p-4 mb-4">
+                        <h2 class="text-center mb-4">Address</h2>
+                        <address>
+                            <strong>PK Institute</strong><br>
+                            123 Main Street<br>
+                            City, State Zip Code<br>
+                            Country
+                        </address>
+                    </div>
+                </div>
+
+                <!-- Column 2 -->
+                <div class="col-md-6">
+                    <!-- Course Inquiry -->
+                    <div class="card bg-light border-1 rounded p-4 mb-4">
+                        <h2 class="text-center mb-4">Course Inquiry</h2>
+                        <p>Please direct all course inquiries to:</p>
+                        <p><strong>Person Name</strong></p>
+                        <p>Email: person@example.com</p>
+                        <p>Phone: +123 456 7890</p>
+                    </div>
+                    <!-- Google Map -->
+                    <div class="card bg-light border-1 rounded p-4 mb-4">
+                        <h2 class="text-center mb-4">Google Map</h2>
+                        <!-- Replace the iframe with your Google Map embed code -->
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe
+                                src="https://maps.google.com/maps?q=MIDC Thane Division Office, Wagle Estate, Thane West, 400604, Maharashtra, India.&t=&z=10&ie=UTF8&iwloc=&output=embed"
+                                class="embed-responsive-item" frameborder="0" style="border:0;" allowfullscreen=""
+                                loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock content %}
