@@ -2,15 +2,10 @@
 {% load static %}
 {% block title %} Home {% endblock %}
 {% block content %}
-<!DOCTYPE html>
-<html lang="en" >
+
 <head>
-  <meta charset="UTF-8">
-  <title>CodePen - Testimonials Carousel</title>
-  <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css'>
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css'>
   <link rel="stylesheet" href="{% static 'home/css/style.css' %}">
-
 </head>
 <body>
 <!-- partial:index.partial.html -->
@@ -67,8 +62,5 @@
   <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js'></script>
 <script  src="{% static 'home/js/script.js' %}"></script>
-
-</body>
-</html>
 
 {% endblock content %}
